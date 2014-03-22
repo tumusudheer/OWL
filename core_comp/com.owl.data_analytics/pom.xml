@@ -1,13 +1,18 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-	<modelVersion>4.0.0</modelVersion>
-    <parent>
-        <groupId>owlBldVer</groupId>
-        <artifactId>com.owl.bld.parent</artifactId>
-        <version>0.0.1-SNAPSHOT</version>
+	<parent>
+		<groupId>owlBldVer</groupId>
+		<artifactId>com.owl.bld.parent</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
 		<relativePath>../../bld_comp/com.owl.bld.parent/pom.xml</relativePath>
-    </parent>
+	</parent>
+	
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>owlBldVer</groupId>
+	<version>0.0.1-SNAPSHOT</version>
 	<artifactId>com.owl.data_analytics</artifactId>
+	<packaging>jar</packaging>
+	
 	<dependencies>
 		<dependency>
 			<groupId>org.apache.lucene</groupId>
@@ -35,9 +40,9 @@
 			<version>4.7.0</version>
 		</dependency>
 		<dependency>
-			<groupId>owlBldVer</groupId>
+			<groupId>${project.groupId}</groupId>
 			<artifactId>com.owl.model</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
+			<version>${project.version}</version>
 		</dependency>
 	</dependencies>
 </project>

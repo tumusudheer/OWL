@@ -7,13 +7,14 @@
 	<packaging>pom</packaging>
 
 	<name>Parent POM</name>
-
+	
 	<modules>
 		<module>../../core_comp/com.owl.model</module>
 		<module>../../core_comp/com.owl.data_analytics</module>
 	</modules>
 
 	<build>
+		<sourceDirectory>src</sourceDirectory>
 		<pluginManagement>
 			<plugins>
 				<plugin>
