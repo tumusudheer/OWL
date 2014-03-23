@@ -6,13 +6,13 @@
 		<version>0.0.1-SNAPSHOT</version>
 		<relativePath>../../bld_comp/com.owl.bld.parent/pom.xml</relativePath>
 	</parent>
-	
+
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>owlBldVer</groupId>
 	<version>0.0.1-SNAPSHOT</version>
 	<artifactId>com.owl.data_analytics</artifactId>
 	<packaging>jar</packaging>
-	
+
 	<dependencies>
 		<dependency>
 			<groupId>org.apache.lucene</groupId>
@@ -38,6 +38,11 @@
 			<groupId>org.apache.lucene</groupId>
 			<artifactId>lucene-queries</artifactId>
 			<version>4.7.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-io</artifactId>
+			<version>1.3.2</version>
 		</dependency>
 		<dependency>
 			<groupId>${project.groupId}</groupId>

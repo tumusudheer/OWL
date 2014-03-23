@@ -1,5 +1,6 @@
 package com.owl.data_analytics;
 
+import java.io.File;
 import java.io.IOException;
 import java.io.StringReader;
 
@@ -22,8 +23,7 @@ import com.owl.model.Entity;
 
 public class ContentStoreBuilder {
 	
-	private static String dataDir;
-	private static String indexDir;
+	private static File indexDir;
 	
 	private static IndexWriter indexWriter;
 	
@@ -101,23 +101,12 @@ public class ContentStoreBuilder {
 		indexWriter.addDocument(doc);
 	}
 
-
-	public static String getDataDir() {
-		return dataDir;
-	}
-
-
-	public static void setDataDir(String dataDir) {
-		ContentStoreBuilder.dataDir = dataDir;
-	}
-
-
-	public static String getIndexDir() {
+	public static File getIndexDir() {
 		return indexDir;
 	}
 
 
-	public static void setIndexDir(String indexDir) {
+	public static void setIndexDir(File indexDir) {
 		ContentStoreBuilder.indexDir = indexDir;
 	}
 

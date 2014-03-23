@@ -8,6 +8,14 @@ public class Entity {
 	private String review;
 	private float rating;
 	
+	public Entity(String name, String address, String category, String review, float rating) {
+		this.name = name;
+		this.address = address;
+		this.category = category;
+		this.review = review;
+		this.rating = rating;
+	}
+	
 	public String getName() {
 		return name;
 	}
